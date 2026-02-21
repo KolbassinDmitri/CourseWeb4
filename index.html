@@ -1,14 +1,74 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Assignment 4</title>
-  <script src="SpeakHello.js"></script>
-  <script src="SpeakGoodBye.js"></script>
-  <script src="script.js"></script>
+  <title>Assignment 5</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
-  <h1>Assignment 4</h1>
-  <p>Check the console in Developer Tools.</p>
+
+  <!-- Header -->
+  <header>
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+
+          <!-- Logo -->
+          <a class="navbar-brand" href="index.html">
+            David Chu's China Bistro
+          </a>
+
+          <!-- Mobile button -->
+          <button type="button"
+                  class="navbar-toggle collapsed"
+                  data-toggle="collapse"
+                  data-target="#collapsable-nav">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+
+        </div>
+
+        <!-- Navigation links -->
+        <div id="collapsable-nav" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <a href="#" onclick="$dc.loadMenuItems('SP');">
+                Specials
+              </a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main content (ВАЖНО!) -->
+  <div id="main-content" class="container">
+  </div>
+
+  <!-- Footer -->
+  <footer class="panel-footer">
+    <div class="container">
+      <p class="text-center">
+        © David Chu's China Bistro
+      </p>
+    </div>
+  </footer>
+
+  <!-- Scripts (порядок важен!) -->
+  <script src="js/jquery-2.1.4.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/ajax-utils.js"></script>
+  <script src="js/script.js"></script>
+
 </body>
 </html>
